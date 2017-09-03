@@ -1,0 +1,9 @@
+<div class="logo">
+  <img src="assets/images/logo.png">
+</div>
+<ul>
+  <li *ngFor="let menuItem of menuItems" class="menu-item">
+    <img src="assets/images/{{menuItem.icon}}.png" alt="">
+    <a href="#">{{menuItem.name}}</a>
+  </li>
+</ul>

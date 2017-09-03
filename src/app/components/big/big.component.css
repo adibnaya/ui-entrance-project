@@ -1,0 +1,67 @@
+.big-component-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-component:nth-child(1){
+  width:39%;
+}
+
+.big-component:nth-child(2){
+  width:59%;
+}
+
+.big-component {
+  width: 49%;
+  border: 1px solid #D4D9E3;
+  background: white;
+}
+
+.big-header {
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.big-component-btn {
+  color: #0E1A35;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: white;
+  border: 1px solid #DADEE7;
+}
+
+.big-component-btn:before {
+  content: 'Period:';
+  margin-right: 5px;
+  font-weight: 700;
+  color: #8492AF;
+}
+
+.big-component-btn img {
+  margin-left: 25px;
+}
+
+.big-component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.big-component-header-item h3 {
+  color: #8492AF;
+}
+
+.chart {
+  width:100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .big-component-area{
+    flex-direction: column;
+  }
+
+  .big-component{
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+}

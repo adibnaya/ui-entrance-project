@@ -1,0 +1,68 @@
+<section class="small-component">
+  <header>
+    <span class="small-component-title">Tasks</span>
+    <div class="small-component-circle">
+      <span>5</span>
+      <span>2</span>
+    </div>
+  </header>
+  <ul>
+    <li *ngFor="let task of tasks" class="tasks-card card">
+      <img src="assets/images/{{task.icons[0]}}.png" alt="" class="card-icon">
+      <div class="tasks-card-text">
+        <span class="task-title">{{task.title}}</span>
+        <span class="color-{{task.color}} tasks-card-text2"><img src="assets/images/time-{{task.icons[1]}}.png" alt="">{{task.days}}</span>
+      </div>
+      <img src="assets/images/{{task.icons[2]}}.png" alt="" class="tasks-card-ham">
+    </li>
+  </ul>
+</section>
+<section class="small-component">
+  <header>
+    <span class="small-component-title">Messages</span>
+    <div class="small-component-circle">
+      <span>2</span>
+    </div>
+  </header>
+  <ul>
+    <li *ngFor="let message of messages" [ngClass]="{'newArt': message.isNew}" class="messages-card card">
+      <img src="assets/images/{{message.icons[0]}}.png" alt="" class="card-icon">
+      <div>
+        <div>
+          <span class="task-name">{{message.name}}</span>
+          <span class="task-time">{{message.time}}</span>
+        </div>
+        <span class="task-text">{{message.text}}</span>
+        <div class="messages-card-area">
+          <img src="assets/images/{{message.icons[1]}}.png" alt="" class="messages-card-btn">
+          <img src="assets/images/{{message.icons[2]}}.png" alt="">
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+<section class="small-component">
+  <header>
+    <span class="small-component-title">Activity</span>
+    <div class="small-component-circle">
+      <span>10</span>
+    </div>
+  </header>
+  <ul>
+    <li *ngFor="let activity of activites" class="card">
+      <img src="assets/images/{{activity.icon}}.png" alt="" class="card-icon">
+      <div>
+        <div>
+          <span class="activity-card-bold">{{activity.name}}</span>
+          <span class="activity-card-grey">{{activity.action}}</span>
+          <span class="activity-card-pretext">{{activity.pretext}}</span>
+          <span class="activity-card-bold">{{activity.task}}</span>
+        </div>
+        <div>
+          <img src="assets/images/time-grey.png" alt="">
+          <span class="activity-card-grey">{{activity.time}}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

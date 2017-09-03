@@ -1,0 +1,29 @@
+.logo{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #0D172E;
+}
+
+.menu-item {
+  height:90px;
+  border-bottom: 1px solid #0D172E;
+  display: flex;
+  align-items: center;
+  padding-left:25px;
+  transition: 0.1s;
+  border-left: 10px solid transparent;
+}
+
+.menu-item:hover {
+  background: #122143;
+}
+
+.menu-item .active {
+  border-left: 10px solid #5584FF;
+}
+
+.menu-item a {
+  margin-left:10px;
+}

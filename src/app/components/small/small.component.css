@@ -1,0 +1,131 @@
+:host{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.task-title {
+  color: #0E1A35;
+  font-weight: bold;
+}
+
+.color-F94E87 {
+  color: #F94E87;
+}
+
+.newArt {
+  background: #F4F5F8;
+}
+
+.color-8694B1 {
+  color: #8694B1;
+}
+
+.task-name {
+  font-weight: bold;
+  color: #0E1A35;
+}
+
+.task-time {
+  color: #8492AF;
+}
+
+.small-component {
+  border: 1px solid #D4D9E3;
+  background: white;
+  width: 32%;
+}
+
+.small-component header {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 1px solid #D2D7E2;
+}
+
+.small-component-title {
+  color: #0E1A35;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.small-component-circle span{
+  border-radius: 50%;
+  color: white;
+  padding: 12px 17px;
+}
+
+.small-component-circle span:nth-child(1) {
+  background: #5384FF;
+}
+
+.small-component-circle span:nth-child(2) {
+  background: #F83C7B;
+}
+.card {
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+.tasks-card {
+  border-bottom: 1px solid #D2D7E2;
+}
+
+.messages-card {
+  border-bottom: 1px solid #D2D7E2;
+}
+
+.activity-card-bold {
+  font-weight: bold;
+  color: #0E1A35;
+}
+
+.activity-card-grey {
+  color: #8492AF;
+}
+
+.activity-card-pretext {
+  color: #555555;
+}
+
+.messages-card-btn {
+  margin-right : 5px;
+}
+
+.messages-card-area {
+  margin-top: 5px;
+}
+
+.card-icon {
+  margin: auto 20px;
+}
+
+.tasks-card-ham {
+  margin: auto 20px auto auto;
+}
+
+.tasks-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-card-text2 {
+  display: flex;
+  margin-top: 5px;
+}
+
+.tasks-card-text2 img{
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  :host{
+    flex-direction: column;
+  }
+
+  .small-component{
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="big-component-area">
+  <div *ngFor="let bigComponent of bigComponents" class="big-component">
+    <header class="big-header">
+      <ul class="big-component-header">
+        <li class="big-component-header-item"><h3>{{bigComponent.name}}</h3></li>
+        <li class="big-component-header-item"><a href="#" class="big-component-btn">{{bigComponent.period}} <img
+          src="assets/images/arrow-down.png" alt=""> </a></li>
+      </ul>
+      <img src="assets/images/{{bigComponent.graph}}.png" class="chart" alt="">
+    </header>
+  </div>
+</div>
