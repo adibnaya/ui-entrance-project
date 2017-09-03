@@ -15,3 +15,4 @@ export class MenuComponent {
     {name:"Settings" , icon: "ico-settings"}
     ]
 }
+
